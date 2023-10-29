@@ -1,0 +1,105 @@
+Report from 2023-02-01 to 2023-02-28 - with duration of 28 days, 0:00:00.
+
+DAY TO DAY EVENTS------------------------------------------------------------------------
+	Free Time: 26.67 - on avg 2.67
+	Sleep Time:
+		Total Hours: 85.5 hours - 2.76 per day.
+	Workout Time:
+		Uniques Names: walk, run, gym, fight, abs & push-ups, abs & extra.
+		Total Hours: 18.25 hours - 2.453% of the time.
+		Hours by name: 
+			Event Gym - reapeats 7 times --- total 7.25 hours --- avg 1.04.
+			Event Run - reapeats 3 times --- total 3.75 hours --- avg 1.25.
+			Event Walk - reapeats 5 times --- total 3.25 hours --- avg 0.65.
+			Event Fight - reapeats 2 times --- total 2.75 hours --- avg 1.38.
+			Event Abs & extra - reapeats 1 times --- total 1.00 hours --- avg 1.00.
+			Event Abs & push-ups - reapeats 1 times --- total 0.25 hours --- avg 0.25
+	Food Time:
+		Uniques Names: dinner, mornin mood, coffee, lunch, good night.
+		Total Hours: 10.75 hours - 1.445% of the time.
+		Hours by name: 
+			Event Dinner - reapeats 4 times --- total 3.25 hours --- avg 0.81.
+			Event Lunch - reapeats 3 times --- total 3.00 hours --- avg 1.00.
+			Event Coffee - reapeats 3 times --- total 2.50 hours --- avg 0.83.
+			Event Mornin mood - reapeats 2 times --- total 1.50 hours --- avg 0.75.
+			Event Good night - reapeats 1 times --- total 0.50 hours --- avg 0.50
+
+RESUME EVENTS------------------------------------------------------------------------
+	Main Time:
+		Uniques Names: code learning, books, studies, data concepts, coding, mobile, julia, coursera.
+		Total Hours: 37.17 hours - expected 93.0 hours - 4.996% of the time.
+		Hours by name: 
+			Event Coding - reapeats 10 times --- total 15.25 hours --- avg 1.52.
+			Event Code learning - reapeats 9 times --- total 8.50 hours --- avg 0.94.
+			Event Studies - reapeats 2 times --- total 5.25 hours --- avg 2.62.
+			Event Books - reapeats 2 times --- total 3.33 hours --- avg 1.67.
+			Event Data concepts - reapeats 2 times --- total 2.25 hours --- avg 1.12.
+			Event Mobile - reapeats 3 times --- total 1.50 hours --- avg 0.50.
+			Event Julia - reapeats 2 times --- total 0.83 hours --- avg 0.42.
+			Event Coursera - reapeats 1 times --- total 0.25 hours --- avg 0.25
+	Work Time:
+		Uniques Names: work 1, work 2.
+		Total Hours: 71.25 hours - normal of 72 hours in 9 days - 9.577% of the time.
+		Hours by name: 
+			Event Work 2 - reapeats 9 times --- total 42.00 hours --- avg 4.67.
+			Event Work 1 - reapeats 9 times --- total 29.25 hours --- avg 3.25
+
+IMPORTANT EVENTS------------------------------------------------------------------------
+	Yellow Time:
+		Uniques Names: read - xxx, clean, podcast - xxx, notion, schedule, podcast - yyy, doctor, read - yyy, read, stuffs.
+		Total Hours: 12.75 hours - 1.714% of the time.
+		Hours by name: 
+			Event Doctor - reapeats 3 times --- total 2.00 hours --- avg 0.67.
+			Event Read - xxx - reapeats 2 times --- total 2.00 hours --- avg 1.00.
+			Event Podcast - xxx - reapeats 2 times --- total 1.75 hours --- avg 0.88.
+			Event Podcast - yyy - reapeats 2 times --- total 1.50 hours --- avg 0.75.
+			Event Clean - reapeats 1 times --- total 1.00 hours --- avg 1.00.
+			Event Notion - reapeats 1 times --- total 1.00 hours --- avg 1.00.
+			Event Read - reapeats 2 times --- total 1.00 hours --- avg 0.50.
+			Event Schedule - reapeats 1 times --- total 1.00 hours --- avg 1.00.
+			Event Stuffs - reapeats 2 times --- total 1.00 hours --- avg 0.50.
+			Event Read - yyy - reapeats 1 times --- total 0.50 hours --- avg 0.50
+
+Others EVENTS------------------------------------------------------------------------
+	Social Time:
+		Uniques Names: carnaval, out, musueum, friend, football game.
+		Total Hours: 39.25 hours - 5.276% of the time.
+		Hours by name: 
+			Event Out - reapeats 6 times --- total 20.50 hours --- avg 3.42.
+			Event Football game - reapeats 2 times --- total 9.00 hours --- avg 4.50.
+			Event Friend - reapeats 2 times --- total 4.00 hours --- avg 2.00.
+			Event Carnaval - reapeats 2 times --- total 3.50 hours --- avg 1.75.
+			Event Musueum - reapeats 1 times --- total 2.25 hours --- avg 2.25
+	Streaming Time:
+		Uniques Names: reels, star+, disney+, hbomax, youtube, netflix.
+		Total Hours: 31.25 hours - 4.200% of the time.
+		Hours by name: 
+			Event Netflix - reapeats 10 times --- total 17.00 hours --- avg 1.70.
+			Event Reels - reapeats 5 times --- total 6.75 hours --- avg 1.35.
+			Event Youtube - reapeats 4 times --- total 3.25 hours --- avg 0.81.
+			Event Hbomax - reapeats 2 times --- total 3.00 hours --- avg 1.50.
+			Event Disney+ - reapeats 1 times --- total 0.75 hours --- avg 0.75.
+			Event Star+ - reapeats 1 times --- total 0.50 hours --- avg 0.50
+	All Day Time:
+		Uniques Names: all day event 01, all day event 02, all day event 03, all day event 04, out, musueum.
+		Total Hours: 46.81 days.
+		Hours by name: 
+			Event Musueum - total 37.1875 days.
+			Event All day event 04 - total 5.0 days.
+			Event All day event 01 - total 4.0 days.
+			Event All day event 02 - total 2.0 days.
+			Event All day event 03 - total 1.0 days.
+			Event Out - total -2.375 days
+
+MOVIMENT EVENTS------------------------------------------------------------------------
+	Transport Time:
+		Uniques Names: car - unaí to bsb, airplane - bsb to são paulo, bus - são paulo to araraquara, car - araraquara to são paulo, uber, metro.
+		Total Hours: 21.00 hours - 2.823% of the time.
+		Hours by name: 
+			Event Uber - reapeats 4 times --- total 8.50 hours --- avg 2.12.
+			Event Airplane - bsb to são paulo - reapeats 1 times --- total 7.00 hours --- avg 7.00.
+			Event Bus - são paulo to araraquara - reapeats 1 times --- total 2.00 hours --- avg 2.00.
+			Event Metro - reapeats 3 times --- total 2.00 hours --- avg 0.67.
+			Event Car - araraquara to são paulo - reapeats 1 times --- total 1.00 hours --- avg 1.00.
+			Event Car - unaí to bsb - reapeats 1 times --- total 0.50 hours --- avg 0.50
+

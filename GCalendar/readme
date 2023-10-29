@@ -1,0 +1,90 @@
+This project ~~which can me divide in two parts~~ has the goal to show ~~in two differents ways~~ the events from **Google Calender**. 
+
+The Google Calender events need to follow a pattern in realted to its colors. Since I was building it to use with my personal account, two patterns was created, or almost two. Look, for data older than 2022 ~~from 2018 to 2021, exactly~~ a random report was made, you can see more about in `Report|2018-21` and `report_specifYear.py` - this was the "first" part. The other part use the others files and folder.
+
+In short, the code usefull for you to use in your personal Google Calender is every file and folder, except `Report|2018-21` and `report_specifYear.py` *and one more*. IMPORTANT remember to see the colors patterns for the events, they are extremely important.
+
+You can visualize you events in two ways, with a **Report** or a **Dashboard** - see `report.py` and `dashboard.py` for more information.
+
+## Analytics
+Here, are all functions used to create some aggregations for the data - has four files. 
+
+`agg_colors` and `agg_report` prepare and call the aggregations and other auxiliars functions (they are stored in `aux_analytics`) against some data. This data is filtered and selected based on color or the report logic (see **report.py** below for more information) and events type (see **constants.py** for more). Also, it is in this files that the data format is returned *display_info()*, this will defined the format the data is returned (3 possibles, more in **constants.py**).
+
+The last files is `agg_specifYear.py`, the *one more* file used by the "first" part. Here has some functions to make the aggregation and stored it.
+
+## Fake
+The file `fake_events.csv` has a sample of data that can be used to test the project. You can se this folder as a example of the project.
+
+`report.txt` has a **Report** using the layout01 *txt format*. This report was created running `report.py` against the fake data. In folders `pages` and `plots` has the html used for the **Dashboard**.
+
+## GCalenderExFuncs
+Random usefull or not functions that I found while I was searching about this API and how to connect and what we can get from it.
+
+## GetData
+Three files that are responsible to gather the data from Google Calender. NOTICE this API is not full tested, so a warning is shown when you try to connect and some manual work is necessary (click to confirm the app has access to the data).
+
+`call_setup` here create the connection with the Google Calender API, the service object is returned, where the events can be gather. `functions` has auxiliars functions that help extract and transform the data in the appropriate format.
+
+`store` is the main file and has three main functions `update_current_year()`, `get_all_year()` and `get_specif_date()`. The fisrt one will get the data by reading the first row of the `Database/metadata.txt`, from that day until the day before the current one, the events is collect. 
+
+The second one will get the data for the whole passed *as parameter* year, save the years already search in the second row of `Database/metadata.txt`. The last one is more customized, you will enter de start and finish date to get the events and also the dabase path (where the data will be saved). In the others functions, they saved in `constants.DB_PATH` path.
+
+The folder `Database` is where the events dabase is usually stored and also contain the metadata file.
+
+## Reports
+Another folder to store **Reports**.
+
+## Reports|2018-21
+Will store the **Reports** from a specif year *first project part* by running the file `report_specifYear`.
+
+## Visu
+Folder responsible to contain all plot related functions.
+
+All files finished with `*_events` will have the functions (file division is based on events type *constants.py*) responsible to create the **plot html**, a html with the plots, legends, titles and so on. The return, a html string, is attached with the rest of the html, creating the dashboard (see *dashboard.py*).
+
+`build` has the functions to build the plots, i.e., the plotly functions with some auxiliaries. `common` has auxiliares functions that help prepare the data to be plot - **events_* files will used it.
+
+`create_html` will create the html for each event type page, for the main one and the buttons.
+
+HTML Plots, made by Plotly functions are stored in `constants.PLOT_PATH` and the html pages for each event type in `constants.PAGE_PATH`.
+
+## constants
+Contain usefull constants that will be used throw the code.
+
+Like the description of the Color events meaning (the events pattern, some aggregations are based on this) and also other colors information. 
+
+Important constants, like some path (the dabase, report and visu save, metadata), amount of day analysed. Also, there is a function to collect a specific portion of the data (make some filter more quickly) base on the date - used to get the data. 
+
+And the data format returned by the Aggregations Functions is defined, if a **Report** is running, can be *l01* or *l02*, where the first one return the data in a text format - good for txt files and terminal display. The second one is in html format - good to send a email. Finally, can also be *l03*, which return the data using a dataframe - good for visualization or other creation.
+
+`events_type` are defined based on the report logic and colors pattern, follow the rules:
+    * allDay: events with duration bigger than 24hrs
+    * daily: sleep, Tangerine events
+    * important: Yellow events
+    * rest: where no events was done (for it to work, there cannot be overlapping events)
+    * resume: Sage, Graphite, Basil, Tomato events
+    * social: Sage events
+    * streaming: Lavender events
+    * transport: Flamingo events
+    * workout': Blueberry events
+
+## dashboard
+Here the dashboard will be created. To access, got to `constants.PAGE_PATH`, file `main.html`.
+
+The dash will have a Header (time information), then, a section with some General Information (events frequency, by color, day and so on).
+
+Then, a list of button is show, the events type *find in constants.py*. By clicking in the button, you go to the event page, where the data for that specif event is plot.
+
+See `constants.py`, which data to take, the data format (DISPLAY = 'l03' for dash), some path are important variables that will be used.
+
+## data
+Has the functions used by `constants.load_data()` use to filter and prepare the data tha will be processed - used in Report and Dashboard solutions.
+
+## report_specifYear
+Prepare the data and call the aggregations for the some specific years. Based on this aggregation, a short analysis was base. This was more for me, so will not spend more time here.
+
+## report
+Will generate the Report. In `constants.DISPLAY` should define wich data format wanna use (used l01 or l02) - the email function is in here.
+
+Separeted the events based on the events type in `constants.event_type`.
