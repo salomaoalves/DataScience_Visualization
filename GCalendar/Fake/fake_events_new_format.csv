@@ -1,0 +1,175 @@
+Name,Colors,StartTimeStamp,EndTimeStamp,WeekDay,WeekByMonth,WeekByYear,TimeZone
+sleep,0,2023-02-03 01:30:00,2023-02-03 08:30:00,4,1,5,America/Sao_Paulo
+sleep,0,2023-02-04 00:30:00,2023-02-04 08:00:00,5,1,5,America/Sao_Paulo
+sleep,0,2023-02-05 01:30:00,2023-02-05 08:30:00,6,1,5,America/Sao_Paulo
+sleep,0,2023-02-06 02:45:00,2023-02-06 08:30:00,0,1,6,America/Sao_Paulo
+sleep,0,2023-02-07 00:30:00,2023-02-07 09:00:00,1,1,6,America/Sao_Paulo
+sleep,0,2023-02-08 01:30:00,2023-02-08 08:30:00,2,2,6,America/Sao_Paulo
+sleep,0,2023-02-09 00:30:00,2023-02-09 08:00:00,3,2,6,America/Sao_Paulo
+sleep,0,2023-02-10 01:30:00,2023-02-10 08:30:00,4,2,6,America/Sao_Paulo
+sleep,0,2023-02-11 02:45:00,2023-02-11 08:30:00,5,2,6,America/Sao_Paulo
+sleep,0,2023-02-12 00:30:00,2023-02-12 09:00:00,6,2,6,America/Sao_Paulo
+sleep,0,2023-02-13 00:30:00,2023-02-13 07:30:00,0,2,7,America/Sao_Paulo
+sleep,0,2023-02-14 01:00:00,2023-02-14 08:00:00,1,2,7,America/Sao_Paulo
+reels,1,2023-02-10 00:30:00,2023-02-10 00:45:00,4,2,6,America/Sao_Paulo
+star+,1,2023-02-10 18:45:00,2023-02-10 19:00:00,4,2,6,America/Sao_Paulo
+disney+,1,2023-02-10 19:15:00,2023-02-10 19:30:00,4,2,6,America/Sao_Paulo
+hbomax,1,2023-02-10 21:30:00,2023-02-10 21:45:00,4,2,6,America/Sao_Paulo
+hbomax,1,2023-02-01 21:30:00,2023-02-01 21:45:00,2,1,5,America/Sao_Paulo
+youtube,1,2023-02-10 23:00:00,2023-02-10 23:15:00,4,2,6,America/Sao_Paulo
+reels,1,2023-02-11 14:00:00,2023-02-11 14:15:00,5,2,6,America/Sao_Paulo
+netflix,1,2023-02-11 20:00:00,2023-02-11 20:15:00,5,2,6,America/Sao_Paulo
+netflix,1,2023-02-12 15:30:00,2023-02-12 15:45:00,6,2,6,America/Sao_Paulo
+netflix,1,2023-02-12 17:45:00,2023-02-12 18:00:00,6,2,6,America/Sao_Paulo
+reels,1,2023-02-15 00:30:00,2023-02-15 00:45:00,2,3,7,America/Sao_Paulo
+youtube,1,2023-02-15 19:30:00,2023-02-15 19:45:00,2,3,7,America/Sao_Paulo
+youtube,1,2023-02-05 19:30:00,2023-02-05 19:45:00,6,1,5,America/Sao_Paulo
+reels,1,2023-02-16 00:30:00,2023-02-16 00:45:00,3,3,7,America/Sao_Paulo
+netflix,1,2023-02-17 17:30:00,2023-02-17 17:45:00,4,3,7,America/Sao_Paulo
+netflix,1,2023-02-17 22:00:00,2023-02-17 22:15:00,4,3,7,America/Sao_Paulo
+netflix,1,2023-02-18 00:00:00,2023-02-18 00:15:00,5,3,7,America/Sao_Paulo
+netflix,1,2023-02-18 03:00:00,2023-02-18 03:15:00,5,3,7,America/Sao_Paulo
+youtube,1,2023-02-18 10:30:00,2023-02-18 10:45:00,5,3,7,America/Sao_Paulo
+reels,1,2023-02-18 13:30:00,2023-02-18 13:45:00,5,3,7,America/Sao_Paulo
+netflix,1,2023-02-18 16:30:00,2023-02-18 16:45:00,5,3,7,America/Sao_Paulo
+netflix,1,2023-02-19 00:30:00,2023-02-19 00:45:00,6,3,7,America/Sao_Paulo
+netflix,1,2023-02-20 00:30:00,2023-02-20 00:45:00,0,3,8,America/Sao_Paulo
+mobile,2,2023-02-14 21:45:00,2023-02-14 22:00:00,1,2,7,America/Sao_Paulo
+mobile,2,2023-02-13 21:45:00,2023-02-13 22:00:00,0,2,7,America/Sao_Paulo
+julia,2,2023-02-12 10:00:00,2023-02-12 10:15:00,6,2,6,America/Sao_Paulo
+code learning,2,2023-02-11 12:15:00,2023-02-11 12:30:00,5,2,6,America/Sao_Paulo
+julia,2,2023-02-14 20:30:00,2023-02-14 20:45:00,1,2,7,America/Sao_Paulo
+code learning,2,2023-02-28 18:30:00,2023-02-28 18:45:00,1,4,9,America/Sao_Paulo
+code learning,2,2023-02-18 22:00:00,2023-02-18 22:15:00,5,3,7,America/Sao_Paulo
+code learning,2,2023-02-07 22:00:00,2023-02-07 22:15:00,1,1,6,America/Sao_Paulo
+code learning,2,2023-02-08 22:00:00,2023-02-08 22:15:00,2,2,6,America/Sao_Paulo
+coursera,2,2023-02-09 22:00:00,2023-02-09 22:15:00,3,2,6,America/Sao_Paulo
+mobile,2,2023-02-06 19:30:00,2023-02-06 19:45:00,0,1,6,America/Sao_Paulo
+all day event 01,3,2023-02-07 00:00:00,2023-02-08 00:00:00,2,2,6,America/Sao_Paulo
+all day event 01,3,2023-02-08 00:00:00,2023-02-09 00:00:00,3,2,6,America/Sao_Paulo
+all day event 01,3,2023-02-09 00:00:00,2023-02-10 00:00:00,4,2,6,America/Sao_Paulo
+all day event 01,3,2023-02-10 00:00:00,2023-02-11 00:00:00,5,2,6,America/Sao_Paulo
+all day event 02,3,2023-02-15 00:00:00,2023-02-16 00:00:00,3,3,7,America/Sao_Paulo
+all day event 02,3,2023-02-16 00:00:00,2023-02-17 00:00:00,4,3,7,America/Sao_Paulo
+all day event 03,3,2023-02-14 00:00:00,2023-02-15 00:00:00,1,2,7,America/Sao_Paulo
+all day event 04,3,2023-02-18 00:00:00,2023-02-19 00:00:00,5,3,7,America/Sao_Paulo
+all day event 04,3,2023-02-19 00:00:00,2023-02-20 00:00:00,6,3,7,America/Sao_Paulo
+all day event 04,3,2023-02-20 00:00:00,2023-02-21 00:00:00,0,3,8,America/Sao_Paulo
+all day event 04,3,2023-02-21 00:00:00,2023-02-22 00:00:00,1,3,8,America/Sao_Paulo
+all day event 04,3,2023-02-22 00:00:00,2023-02-23 00:00:00,2,4,8,America/Sao_Paulo
+carnaval,3,2023-02-18 13:15:00,2023-02-18 13:30:00,5,3,7,America/Sao_Paulo
+carnaval,3,2023-02-19 13:15:00,2023-02-19 13:30:00,6,3,7,America/Sao_Paulo
+out,3,2023-02-15 19:00:00,2023-02-15 19:15:00,2,3,7,America/Sao_Paulo
+out,3,2023-02-14 19:00:00,2023-02-14 19:15:00,1,2,7,America/Sao_Paulo
+out,3,2023-02-13 19:00:00,2023-02-13 19:15:00,0,2,7,America/Sao_Paulo
+out,3,2023-02-11 19:00:00,2023-02-11 19:15:00,5,2,7,America/Sao_Paulo
+out,3,2023-02-08 19:30:00,2023-02-08 19:45:00,2,2,6,America/Sao_Paulo
+out,3,2023-02-18 19:00:00,2023-02-18 19:15:00,5,3,7,America/Sao_Paulo
+out,3,2023-02-19 19:00:00,2023-02-19 19:15:00,6,3,7,America/Sao_Paulo
+out,3,2023-02-20 19:30:00,2023-02-20 19:45:00,0,3,8,America/Sao_Paulo
+musueum,3,2023-02-04 10:45:00,2023-02-04 11:00:00,5,1,5,America/Sao_Paulo
+musueum,3,2023-02-01 10:45:00,2023-02-01 11:00:00,2,1,5,America/Sao_Paulo
+musueum,3,2023-02-21 10:45:00,2023-02-21 11:00:00,1,3,8,America/Sao_Paulo
+friend,3,2023-02-10 21:00:00,2023-02-10 21:15:00,4,2,6,America/Sao_Paulo
+friend,3,2023-02-21 21:00:00,2023-02-21 21:15:00,1,3,8,America/Sao_Paulo
+football game,3,2023-02-26 17:30:00,2023-02-26 17:45:00,6,4,8,America/Sao_Paulo
+football game,3,2023-02-25 17:30:00,2023-02-25 17:45:00,5,4,8,America/Sao_Paulo
+out,3,2023-02-25 22:30:00,2023-02-25 22:45:00,5,4,8,America/Sao_Paulo
+car - unaí to bsb,4,2023-02-22 18:45:00,2023-02-22 19:00:00,2,4,8,America/Sao_Paulo
+airplane - bsb to são paulo,4,2023-02-01 01:00:00,2023-02-01 01:15:00,2,1,5,America/Sao_Paulo
+bus - são paulo to araraquara,4,2023-02-04 06:00:00,2023-02-04 06:15:00,5,1,5,America/Sao_Paulo
+car - araraquara to são paulo,4,2023-02-04 08:00:00,2023-02-04 08:15:00,5,1,5,America/Sao_Paulo
+uber,4,2023-02-09 09:00:00,2023-02-09 09:15:00,3,2,6,America/Sao_Paulo
+metro,4,2023-02-10 12:00:00,2023-02-10 12:15:00,4,2,6,America/Sao_Paulo
+metro,4,2023-02-14 13:00:00,2023-02-14 13:45:00,1,2,7,America/Sao_Paulo
+uber,4,2023-02-14 17:30:00,2023-02-14 17:45:00,1,2,7,America/Sao_Paulo
+uber,4,2023-02-20 13:00:00,2023-02-20 13:15:00,0,3,8,America/Sao_Paulo
+uber,4,2023-02-20 18:00:00,2023-02-20 18:15:00,0,3,8,America/Sao_Paulo
+metro,4,2023-02-23 18:30:00,2023-02-23 18:45:00,2,4,8,America/Sao_Paulo
+read - xxx,5,2023-02-01 08:00:00,2023-02-01 08:15:00,2,1,5,America/Sao_Paulo
+clean,5,2023-02-01 09:00:00,2023-02-01 09:15:00,2,1,5,America/Sao_Paulo
+podcast - xxx,5,2023-02-01 10:00:00,2023-02-01 10:15:00,2,1,5,America/Sao_Paulo
+notion,5,2023-02-01 11:00:00,2023-02-01 11:15:00,2,1,5,America/Sao_Paulo
+schedule,5,2023-02-01 19:00:00,2023-02-01 19:15:00,2,1,5,America/Sao_Paulo
+podcast - yyy,5,2023-02-04 08:45:00,2023-02-04 09:00:00,5,1,5,America/Sao_Paulo
+doctor,5,2023-02-05 09:45:00,2023-02-05 10:00:00,6,1,5,America/Sao_Paulo
+read - xxx,5,2023-02-05 08:45:00,2023-02-05 09:00:00,6,1,5,America/Sao_Paulo
+podcast - xxx,5,2023-02-05 10:45:00,2023-02-05 11:00:00,6,1,5,America/Sao_Paulo
+read - yyy,5,2023-02-06 12:30:00,2023-02-06 12:45:00,0,1,6,America/Sao_Paulo
+doctor,5,2023-02-06 13:30:00,2023-02-06 13:45:00,0,1,6,America/Sao_Paulo
+podcast - yyy,5,2023-02-06 14:30:00,2023-02-06 14:45:00,0,1,6,America/Sao_Paulo
+doctor,5,2023-02-06 18:30:00,2023-02-06 18:45:00,0,1,6,America/Sao_Paulo
+read,5,2023-02-07 23:30:00,2023-02-07 23:45:00,1,2,6,America/Sao_Paulo
+read,5,2023-02-07 20:30:00,2023-02-07 20:45:00,1,2,6,America/Sao_Paulo
+stuffs,5,2023-02-07 19:30:00,2023-02-07 19:45:00,1,2,6,America/Sao_Paulo
+stuffs,5,2023-02-07 14:30:00,2023-02-07 14:45:00,1,2,6,America/Sao_Paulo
+dinner,6,2023-02-01 18:00:00,2023-02-01 18:15:00,2,1,5,America/Sao_Paulo
+mornin mood,6,2023-02-01 08:00:00,2023-02-01 08:15:00,2,1,5,America/Sao_Paulo
+coffee,6,2023-02-04 08:45:00,2023-02-04 09:00:00,5,1,5,America/Sao_Paulo
+lunch,6,2023-02-04 12:45:00,2023-02-04 13:00:00,5,1,5,America/Sao_Paulo
+coffee,6,2023-02-05 08:45:00,2023-02-05 09:00:00,6,1,5,America/Sao_Paulo
+lunch,6,2023-02-05 12:45:00,2023-02-05 13:00:00,6,1,5,America/Sao_Paulo
+dinner,6,2023-02-05 12:45:00,2023-02-05 13:00:00,6,1,5,America/Sao_Paulo
+lunch,6,2023-02-06 12:30:00,2023-02-06 12:45:00,0,1,6,America/Sao_Paulo
+dinner,6,2023-02-06 19:00:00,2023-02-06 19:15:00,0,1,6,America/Sao_Paulo
+mornin mood,6,2023-02-06 08:00:00,2023-02-06 08:15:00,0,1,6,America/Sao_Paulo
+good night,6,2023-02-07 23:30:00,2023-02-07 23:45:00,1,2,6,America/Sao_Paulo
+coffee,6,2023-02-07 09:30:00,2023-02-07 09:45:00,1,2,6,America/Sao_Paulo
+dinner,6,2023-02-07 19:30:00,2023-02-07 19:45:00,1,2,6,America/Sao_Paulo
+coding,8,2023-02-13 22:00:00,2023-02-13 22:15:00,0,2,7,America/Sao_Paulo
+coding,8,2023-02-03 21:00:00,2023-02-03 21:15:00,4,1,5,America/Sao_Paulo
+coding,8,2023-02-22 14:45:00,2023-02-22 15:00:00,2,4,8,America/Sao_Paulo
+coding,8,2023-02-09 21:00:00,2023-02-09 21:15:00,3,2,6,America/Sao_Paulo
+coding,8,2023-02-02 21:00:00,2023-02-02 21:15:00,3,1,5,America/Sao_Paulo
+coding,8,2023-02-25 14:45:00,2023-02-25 15:00:00,5,4,8,America/Sao_Paulo
+coding,8,2023-02-01 21:00:00,2023-02-01 21:15:00,2,1,5,America/Sao_Paulo
+coding,8,2023-02-16 18:00:00,2023-02-16 18:45:00,3,3,7,America/Sao_Paulo
+coding,8,2023-02-23 21:15:00,2023-02-23 21:30:00,3,4,8,America/Sao_Paulo
+coding,8,2023-02-10 20:45:00,2023-02-10 21:00:00,4,2,6,America/Sao_Paulo
+walk,9,2023-02-17 07:00:00,2023-02-17 07:45:00,4,3,7,America/Sao_Paulo
+run,9,2023-02-17 09:00:00,2023-02-17 09:15:00,4,3,7,America/Sao_Paulo
+gym,9,2023-02-17 18:00:00,2023-02-17 18:15:00,4,3,7,America/Sao_Paulo
+gym,9,2023-02-19 13:00:00,2023-02-19 13:15:00,6,3,7,America/Sao_Paulo
+walk,9,2023-02-20 10:45:00,2023-02-20 11:00:00,0,3,8,America/Sao_Paulo
+run,9,2023-02-20 12:45:00,2023-02-20 13:00:00,0,3,8,America/Sao_Paulo
+gym,9,2023-02-22 09:30:00,2023-02-22 09:45:00,2,4,8,America/Sao_Paulo
+walk,9,2023-02-23 17:00:00,2023-02-23 17:15:00,3,4,8,America/Sao_Paulo
+gym,9,2023-02-23 17:30:00,2023-02-23 17:45:00,3,4,8,America/Sao_Paulo
+fight,9,2023-02-23 19:30:00,2023-02-23 19:45:00,3,4,8,America/Sao_Paulo
+walk,9,2023-02-25 10:00:00,2023-02-25 10:15:00,5,4,8,America/Sao_Paulo
+gym,9,2023-02-25 09:00:00,2023-02-25 09:15:00,5,4,8,America/Sao_Paulo
+walk,9,2023-02-26 07:45:00,2023-02-26 08:00:00,6,4,8,America/Sao_Paulo
+abs & push-ups,9,2023-02-26 08:45:00,2023-02-26 09:00:00,6,4,8,America/Sao_Paulo
+gym,9,2023-02-26 09:45:00,2023-02-26 10:00:00,6,4,8,America/Sao_Paulo
+run,9,2023-02-27 10:00:00,2023-02-27 10:15:00,0,4,9,America/Sao_Paulo
+abs & extra,9,2023-02-27 17:00:00,2023-02-27 17:15:00,0,4,9,America/Sao_Paulo
+gym,9,2023-02-27 18:00:00,2023-02-27 18:15:00,0,4,9,America/Sao_Paulo
+fight,9,2023-02-27 20:00:00,2023-02-27 20:15:00,0,4,9,America/Sao_Paulo
+code learning,10,2023-02-07 18:45:00,2023-02-07 19:00:00,1,1,6,America/Sao_Paulo
+code learning,10,2023-02-23 19:15:00,2023-02-23 19:30:00,3,4,8,America/Sao_Paulo
+books,10,2023-02-07 20:00:00,2023-02-07 20:15:00,1,1,6,America/Sao_Paulo
+studies,10,2023-02-11 15:00:00,2023-02-11 15:15:00,5,2,6,America/Sao_Paulo
+data concepts,10,2023-02-08 21:00:00,2023-02-08 21:15:00,2,2,6,America/Sao_Paulo
+studies,10,2023-02-18 15:00:00,2023-02-18 15:45:00,5,3,7,America/Sao_Paulo
+books,10,2023-02-16 22:00:00,2023-02-16 22:15:00,3,3,7,America/Sao_Paulo
+code learning,10,2023-02-09 19:00:00,2023-02-09 19:15:00,3,2,6,America/Sao_Paulo
+data concepts,10,2023-02-15 22:00:00,2023-02-15 22:15:00,2,3,7,America/Sao_Paulo
+code learning,10,2023-02-15 20:00:00,2023-02-15 20:15:00,2,3,7,America/Sao_Paulo
+work 1,11,2023-02-09 08:45:00,2023-02-09 09:00:00,3,2,6,America/Sao_Paulo
+work 2,11,2023-02-09 13:00:00,2023-02-09 13:15:00,3,2,6,America/Sao_Paulo
+work 1,11,2023-02-10 08:45:00,2023-02-10 09:00:00,4,2,6,America/Sao_Paulo
+work 2,11,2023-02-10 13:00:00,2023-02-10 13:15:00,4,2,6,America/Sao_Paulo
+work 1,11,2023-02-13 08:45:00,2023-02-13 09:00:00,0,2,7,America/Sao_Paulo
+work 2,11,2023-02-13 13:00:00,2023-02-13 13:15:00,0,2,7,America/Sao_Paulo
+work 1,11,2023-02-14 08:45:00,2023-02-14 09:00:00,1,2,7,America/Sao_Paulo
+work 2,11,2023-02-14 13:00:00,2023-02-14 13:15:00,1,2,7,America/Sao_Paulo
+work 1,11,2023-02-15 08:45:00,2023-02-15 09:00:00,2,3,7,America/Sao_Paulo
+work 2,11,2023-02-15 13:00:00,2023-02-15 13:15:00,2,3,7,America/Sao_Paulo
+work 1,11,2023-02-16 08:45:00,2023-02-16 09:00:00,3,3,7,America/Sao_Paulo
+work 2,11,2023-02-16 13:00:00,2023-02-16 13:15:00,3,3,7,America/Sao_Paulo
+work 1,11,2023-02-17 08:45:00,2023-02-17 09:00:00,4,3,7,America/Sao_Paulo
+work 2,11,2023-02-17 13:00:00,2023-02-17 13:15:00,4,3,7,America/Sao_Paulo
+work 1,11,2023-02-23 08:45:00,2023-02-23 09:00:00,3,4,8,America/Sao_Paulo
+work 2,11,2023-02-23 13:00:00,2023-02-23 13:15:00,3,4,8,America/Sao_Paulo
+work 1,11,2023-02-24 08:45:00,2023-02-24 09:00:00,4,4,8,America/Sao_Paulo
+work 2,11,2023-02-24 13:00:00,2023-02-24 13:15:00,4,4,8,America/Sao_Paulo

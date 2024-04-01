@@ -10,8 +10,10 @@ def read_db():
     '''Get data using the constant for the db path'''
 
     # Read the data
-    if not cts.FK_DATA: df = pd.read_csv(cts.DB_PATH, sep=',')
-    else: df = pd.read_csv(cts.DB_FK_PATH, sep=',')
+    if cts.FK_DATA: 
+        if cts.NEW_FORMAT: df = pd.read_csv(cts.DB_FK_PATH_NEW, sep=',')
+        else: df = pd.read_csv(cts.DB_FK_PATH, sep=',')
+    else: df = pd.read_csv(cts.DB_PATH, sep=',')
 
     # Convert the dates and times cols to datetime64
     df['StartTimeStamp'] = pd.to_datetime(df['StartTimeStamp'], format='%Y-%m-%d %H:%M:%S')

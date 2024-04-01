@@ -28,15 +28,25 @@ def get_range_dates(df):
 def subBar(data, plot_name, hover_cols, evt):
     fig = make_subplots(rows=1, cols=2, subplot_titles=(evt+' daily', evt+' per day of week'))
 
-    fig.add_trace(
-        go.Bar(x=data.loc[:,'day'], y=data.loc[:,"duration"], customdata=data[hover_cols],
-               hovertemplate='day/duration: %{x}---%{y}' + get_hover_text(hover_cols)),
-        row=1, col=1)
-
-    fig.add_trace(
-        go.Bar(x=data.loc[:,'name_day'], y=data.loc[:,"duration"], customdata=data[hover_cols],
-               hovertemplate='name_day/duration: %{x}---%{y}' + get_hover_text(hover_cols)),
-        row=1, col=2)
+    if cts.NEW_FORMAT:
+        data['qty'] = data['duration']*4
+        fig.add_trace(
+            go.Bar(x=data.loc[:,'day'], y=data.loc[:,"qty"], customdata=data[hover_cols],
+                    hovertemplate='day/qty: %{x}---%{y}' + get_hover_text(hover_cols)),
+            row=1, col=1)
+        fig.add_trace(
+            go.Bar(x=data.loc[:,'name_day'], y=data.loc[:,"qty"], customdata=data[hover_cols],
+                hovertemplate='name_day/qty: %{x}---%{y}' + get_hover_text(hover_cols)),
+            row=1, col=2)
+    else:
+        fig.add_trace(
+            go.Bar(x=data.loc[:,'day'], y=data.loc[:,"duration"], customdata=data[hover_cols],
+                    hovertemplate='day/duration: %{x}---%{y}' + get_hover_text(hover_cols)),
+            row=1, col=1)
+        fig.add_trace(
+            go.Bar(x=data.loc[:,'name_day'], y=data.loc[:,"duration"], customdata=data[hover_cols],
+                hovertemplate='name_day/duration: %{x}---%{y}' + get_hover_text(hover_cols)),
+            row=1, col=2)
 
     #fig.update_layout(height=600, width=800, title_text="Side By Side Subplots")
     fig.update_layout(showlegend=False)
@@ -47,9 +57,15 @@ def subBar(data, plot_name, hover_cols, evt):
 
 
 def bar(data, col, plot_name, hover_cols):    
-    graphic = [go.Bar(x=data.loc[:,col], y=data.loc[:,"duration"], customdata=data[hover_cols],
-                      hovertemplate=col+'/duration: %{x}---%{y}' + get_hover_text(hover_cols)
-                      )]
+    if cts.NEW_FORMAT:
+        data['qty'] = data['duration']*4
+        graphic = [go.Bar(x=data.loc[:,col], y=data.loc[:,"qty"], customdata=data[hover_cols],
+                        hovertemplate=col+'/qty: %{x}---%{y}' + get_hover_text(hover_cols)
+                        )]
+    else:
+        graphic = [go.Bar(x=data.loc[:,col], y=data.loc[:,"duration"], customdata=data[hover_cols],
+                        hovertemplate=col+'/duration: %{x}---%{y}' + get_hover_text(hover_cols)
+                        )]
     fig = go.Figure(data=graphic, layout=go.Layout(barmode = 'group'))
 
     # Axis order
@@ -69,9 +85,15 @@ def stacked_bar(df, col, plot_name, hover_cols):
     # Create the plots
     for name in unique_name:
         df_temp = df[df['Name'] == name]
-        data.append(go.Bar(x=df_temp.loc[:,col], y=df_temp.loc[:,"duration"], name=name, 
-                           legendrank=sort_names.index(name), customdata=df[hover_cols],
-                           hovertemplate=col+'/duration: %{x}---%{y}' + get_hover_text(hover_cols)))
+        if cts.NEW_FORMAT:
+            df_temp['qty'] = df_temp['duration']*4
+            data.append(go.Bar(x=df_temp.loc[:,col], y=df_temp.loc[:,"qty"], name=name, 
+                            legendrank=sort_names.index(name), customdata=df[hover_cols],
+                            hovertemplate=col+'/qty: %{x}---%{y}' + get_hover_text(hover_cols)))
+        else:
+            data.append(go.Bar(x=df_temp.loc[:,col], y=df_temp.loc[:,"duration"], name=name, 
+                            legendrank=sort_names.index(name), customdata=df[hover_cols],
+                            hovertemplate=col+'/duration: %{x}---%{y}' + get_hover_text(hover_cols)))
     fig = go.Figure(data = data, layout = go.Layout(barmode = 'group'))
 
     # Axis order

@@ -34,7 +34,7 @@ def get_specif_agg(df_sum, df_freq, title):
             sum = df_sum.loc[i,'duration'].total_seconds()/3600/1
             str_freq = str(df_freq.loc[i,'duration'])
             str_avg = float(sum)/float(str_freq)
-            main_info = f'Event {i.capitalize()} - reapeats {str_freq} times --- total {sum:.2f} hours --- avg {str_avg:.2f}.'
+            main_info = f'Event {i.capitalize()} - reapeats {str_freq} times' + (f'.' if cts.NEW_FORMAT else f' --- total {sum:.2f} hours --- avg {str_avg:.2f}.')
         
         if cts.DISPLAY=='l01':
             info += '\t\t\t'+main_info+'\n'
@@ -100,13 +100,13 @@ def display_info(title, unique_names, total_hours, hours_byName, freq_byName, df
     if cts.DISPLAY=='l01': # txt format
         title_display = f'\t{title} Time:\n'
         unq_name = f'\t\tUniques Names: {uniq_name_str}\n'
-        total_hours_display = f'\t\tTotal Hours: ' + total_hours_str + '\n'
+        total_hours_display = '' if cts.NEW_FORMAT else f'\t\tTotal Hours: ' + total_hours_str + '\n'
         hours_byName_display = f'\t\tHours by name: \n{get_specif_agg(hours_byName, freq_byName, title)[:-2]}'
         return title_display+unq_name+total_hours_display+hours_byName_display
     elif cts.DISPLAY=='l02': # html format
         title_display = f'<h2>{title} Time</h2>\n'
         unq_name = f'<strong>Uniques Names</strong><p>{uniq_name_str}</p>'
-        total_hours_display = f'<strong>Total Hours</strong><p>'+total_hours_str+'</p>'
+        total_hours_display = '' if cts.NEW_FORMAT else f'<strong>Total Hours</strong><p>'+total_hours_str+'</p>'
         hours_byName_display = f'<strong>Hours by name</strong>{get_specif_agg(hours_byName, freq_byName, title)}'
         return title_display+unq_name+total_hours_display+hours_byName_display
     elif cts.DISPLAY=='l03': # data format

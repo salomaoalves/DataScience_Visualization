@@ -1,0 +1,88 @@
+Report from 2024-02-01 to 2024-02-29 - with duration of 29 days, 0:00:00.
+
+DAY TO DAY EVENTS------------------------------------------------------------------------
+
+	Sleep Time:
+		Total Hours: 64.75 hours - 2.23 per day.
+	Workout Time:
+		Uniques Names: funcional, gym, climbing, stretch n mobility, pilates.
+		Hours by name: 
+			Event Gym - reapeats 5 times.
+			Event Climbing - reapeats 2 times.
+			Event Funcional - reapeats 1 times.
+			Event Pilates - reapeats 1 times.
+			Event Stretch n mobility - reapeats 1 times
+	Food Time:
+		Uniques Names: coffee, lunch, dinner, night mood.
+		Hours by name: 
+			Event Dinner - reapeats 10 times.
+			Event Lunch - reapeats 10 times.
+			Event Coffee - reapeats 9 times.
+			Event Night mood - reapeats 9 times
+
+RESUME EVENTS------------------------------------------------------------------------
+	Main Time:
+		Uniques Names: 
+		Hours by name: 
+
+	Work Time:
+		Uniques Names: lnrs.
+		Hours by name: 
+			Event Lnrs - reapeats 20 times
+
+IMPORTANT EVENTS------------------------------------------------------------------------
+	Yellow Time:
+		Uniques Names: news, hindi, trips, read - manga, read - superinteressante, podcast - history, podcast - petit journal, podcast - xadrez verbal, clean, podcast - opexcast, podcast - você não sabia, market, job, house, stuffs, read, turing meeting, podcast - science, backpack.
+		Hours by name: 
+			Event Trips - reapeats 9 times.
+			Event Backpack - reapeats 3 times.
+			Event News - reapeats 7 times.
+			Event Podcast - xadrez verbal - reapeats 3 times.
+			Event Podcast - petit journal - reapeats 5 times.
+			Event Job - reapeats 2 times.
+			Event Podcast - history - reapeats 3 times.
+			Event Read - superinteressante - reapeats 1 times.
+			Event Podcast - opexcast - reapeats 1 times.
+			Event Clean - reapeats 1 times.
+			Event Podcast - science - reapeats 1 times.
+			Event Podcast - você não sabia - reapeats 1 times.
+			Event House - reapeats 1 times.
+			Event Read - reapeats 1 times.
+			Event Stuffs - reapeats 1 times.
+			Event Turing meeting - reapeats 1 times.
+			Event Market - reapeats 1 times.
+			Event Read - manga - reapeats 1 times.
+			Event Hindi - reapeats 1 times
+
+Others EVENTS------------------------------------------------------------------------
+	Social Time:
+		Uniques Names: hang out, out, brás, carnaval, family, airport gru.
+		Hours by name: 
+			Event Hang out - reapeats 5 times.
+			Event Brás - reapeats 1 times.
+			Event Carnaval - reapeats 2 times.
+			Event Airport gru - reapeats 1 times.
+			Event Out - reapeats 1 times.
+			Event Family - reapeats 1 times
+	Streaming Time:
+		Uniques Names: reels, ..., netflix, youtube, hbomax, supercopa rei, star+.
+		Hours by name: 
+			Event ... - reapeats 9 times.
+			Event Netflix - reapeats 7 times.
+			Event Youtube - reapeats 5 times.
+			Event Reels - reapeats 8 times.
+			Event Star+ - reapeats 1 times.
+			Event Hbomax - reapeats 2 times.
+			Event Supercopa rei - reapeats 1 times
+	All Day Time:
+		Uniques Names: india.
+		Hours by name: 
+			Event India - total 19.0 days
+
+MOVIMENT EVENTS------------------------------------------------------------------------
+	Transport Time:
+		Uniques Names: metro, uber.
+		Hours by name: 
+			Event Uber - reapeats 5 times.
+			Event Metro - reapeats 3 times
+

@@ -37,15 +37,16 @@ events_type = ['allDay', 'daily', 'important', 'rest', 'resume', 'social', 'stre
 # Constants to use throw the code
 EVENTS_SEP = ' EVENTS------------------------------------------------------------------------\n'
 #TXT_PATH = './Reports/Weeks/report23_0301:0312.txt'
-TXT_PATH = './Reports/report_202309.txt'
-DB_PATH = './GetData/Database/events2023.csv'
+TXT_PATH = './Reports/report_202402.txt'
+DB_PATH = './GetData/Database/events2024.csv'
 DB_FK_PATH = './Fake/fake_events.csv'
-VISU_PATH = './Visu/2023Q1/'
+DB_FK_PATH_NEW = './Fake/fake_events_new_format.csv'
+VISU_PATH = './Visu/fake/'
 PLOT_PATH = VISU_PATH+'plots/'
 PAGE_PATH = VISU_PATH+'pages/'
 DISPLAY = 'l03' # 'l01: txt format' - 'l02: html format' - 'l03: data'
-DAYS = 31
-FK_DATA = False
+NEW_FORMAT = True # events without time measurement
+FK_DATA = True
 
 
 # Import data
@@ -61,6 +62,7 @@ def load_data(load_type, day_one, day_second, prev_day, month, year, quarter):
         @year: year to be search - (2018-current)
         @quarter: which quarter of the year - (1-4)'''
 
+    # Get data
     if load_type=='all':
         df = data.read_db()
     elif load_type=='prev_day':
@@ -75,5 +77,9 @@ def load_data(load_type, day_one, day_second, prev_day, month, year, quarter):
         df = data.get_date_period(data.read_db(), day_one, day_second)
     elif load_type=='quarter':
         df = data.get_date_by_quarter(data.read_db(), quarter)
-    return df
-DATA = load_data('quarter', (2023,2,12), (2023,2,18), 0, 9, 2023, 1)
+
+    # Get quantity of days
+    qty_days = len(df['StartTimeStamp'].dt.date.unique())
+
+    return df, qty_days
+DATA, DAYS = load_data('all', (2023,2,12), (2023,2,18), 0, 2, 2024, 1)

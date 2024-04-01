@@ -56,6 +56,8 @@ def get_free(data):
         free_pref = f' - {perc_hour:.3f}% of the time.'
 
     # Info display
+    if cts.NEW_FORMAT:
+        return ''
     if cts.DISPLAY=='l01':
         return f'\tFree Time: {free_hours:.2f} - on avg {free_hours/days:.2f}'+free_pref
     elif cts.DISPLAY=='l02':

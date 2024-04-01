@@ -3,10 +3,14 @@ from Analytics import agg_report
 from Visu import build, common
 from Visu import create_html
 import pandas as pd
+import constants as cts
 
 def main(data):
     # Get and prepare data to plot
-    data = pd.concat([agg_report.get_sleep(data), agg_report.get_free(data)])
+    if cts.NEW_FORMAT:
+        data = agg_report.get_sleep(data)
+    else:
+        data = pd.concat([agg_report.get_sleep(data), agg_report.get_free(data)])
     data_prep = common.prepare_data(data)
     data_prep = data_prep[data_prep['duration']>0]
 
