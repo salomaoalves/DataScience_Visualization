@@ -7,7 +7,7 @@ import constants as cts
 
 def main(data):
     # Get and prepare data to plot
-    if cts.NEW_FORMAT:
+    if cts.NO_TIME_MEASUREMENT:
         data = agg_report.get_sleep(data)
     else:
         data = pd.concat([agg_report.get_sleep(data), agg_report.get_free(data)])

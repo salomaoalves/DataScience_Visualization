@@ -34,7 +34,7 @@ def get_specif_agg(df_sum, df_freq, title):
             sum = df_sum.loc[i,'duration'].total_seconds()/3600/1
             str_freq = str(df_freq.loc[i,'duration'])
             str_avg = float(sum)/float(str_freq)
-            main_info = f'Event {i.capitalize()} - reapeats {str_freq} times' + (f'.' if cts.NEW_FORMAT else f' --- total {sum:.2f} hours --- avg {str_avg:.2f}.')
+            main_info = f'Event {i.capitalize()} - reapeats {str_freq} times --- total {sum:.2f} hours --- avg {str_avg:.2f}.'
         
         if cts.DISPLAY=='l01':
             info += '\t\t\t'+main_info+'\n'
@@ -100,13 +100,13 @@ def display_info(title, unique_names, total_hours, hours_byName, freq_byName, df
     if cts.DISPLAY=='l01': # txt format
         title_display = f'\t{title} Time:\n'
         unq_name = f'\t\tUniques Names: {uniq_name_str}\n'
-        total_hours_display = '' if cts.NEW_FORMAT else f'\t\tTotal Hours: ' + total_hours_str + '\n'
+        total_hours_display = f'\t\tTotal Hours: ' + total_hours_str + '\n'
         hours_byName_display = f'\t\tHours by name: \n{get_specif_agg(hours_byName, freq_byName, title)[:-2]}'
         return title_display+unq_name+total_hours_display+hours_byName_display
     elif cts.DISPLAY=='l02': # html format
         title_display = f'<h2>{title} Time</h2>\n'
         unq_name = f'<strong>Uniques Names</strong><p>{uniq_name_str}</p>'
-        total_hours_display = '' if cts.NEW_FORMAT else f'<strong>Total Hours</strong><p>'+total_hours_str+'</p>'
+        total_hours_display = f'<strong>Total Hours</strong><p>'+total_hours_str+'</p>'
         hours_byName_display = f'<strong>Hours by name</strong>{get_specif_agg(hours_byName, freq_byName, title)}'
         return title_display+unq_name+total_hours_display+hours_byName_display
     elif cts.DISPLAY=='l03': # data format
@@ -128,3 +128,26 @@ def get_agg(df):
     freq_byNameSort = freq_byName.sort_values(['duration'], ascending=False)
 
     return unique_names,total_hours,hours_byNameSort,freq_byNameSort
+
+def set_end_time(row, df):
+    df = df.sort_values(by='StartTimeStamp')
+    df = df[df['StartTimeStamp'] > row['StartTimeStamp']]
+    if row['Name'] != 'sleep':
+        if cts.FK_DATA:
+            return row['EndTimeStamp'] + pd.Timedelta('30m')
+        else:
+            try:
+                return df['StartTimeStamp'].iloc[0]
+            except IndexError:
+                return row['StartTimeStamp'] + pd.Timedelta(days=1) - pd.Timedelta(seconds=row['StartTimeStamp'].second,
+                                                                                   minutes=row['StartTimeStamp'].minute,
+                                                                                   hours=row['StartTimeStamp'].hour)
+    else:
+        return row['EndTimeStamp']
+def add_time_measurement(data):
+    '''Get the event time - which is all the time untill the next event
+        @data: the dataframe with the events'''
+
+    data['EndTimeStamp_'] = data.apply(set_end_time, args=(data,), axis=1)
+
+    return data

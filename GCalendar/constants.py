@@ -37,19 +37,20 @@ events_type = ['allDay', 'daily', 'important', 'rest', 'resume', 'social', 'stre
 # Constants to use throw the code
 EVENTS_SEP = ' EVENTS------------------------------------------------------------------------\n'
 #TXT_PATH = './Reports/Weeks/report23_0301:0312.txt'
-TXT_PATH = './Reports/report_202402.txt'
+TXT_PATH = './Reports/report_202202.txt'
 DB_PATH = './GetData/Database/events2024.csv'
 DB_FK_PATH = './Fake/fake_events.csv'
 DB_FK_PATH_NEW = './Fake/fake_events_new_format.csv'
-VISU_PATH = './Visu/fake/'
+VISU_PATH = './Visu/2024Q1/'
 PLOT_PATH = VISU_PATH+'plots/'
 PAGE_PATH = VISU_PATH+'pages/'
-DISPLAY = 'l03' # 'l01: txt format' - 'l02: html format' - 'l03: data'
-NEW_FORMAT = True # events without time measurement
-FK_DATA = True
+DISPLAY = 'l01' # 'l01: txt format' - 'l02: html format' - 'l03: data'
+NO_TIME_MEASUREMENT = True # TODO create the func
+FK_DATA = False
 
 
 # Import data
+from Analytics import aux_analytics
 import data as data
 def load_data(load_type, day_one, day_second, prev_day, month, year, quarter):
     '''Get the events from a given date
@@ -63,23 +64,30 @@ def load_data(load_type, day_one, day_second, prev_day, month, year, quarter):
         @quarter: which quarter of the year - (1-4)'''
 
     # Get data
-    if load_type=='all':
-        df = data.read_db()
-    elif load_type=='prev_day':
-        df = data.get_data_by_prev_day(data.read_db(), prev_day)
-    elif load_type=='week':
-        df = data.get_data_by_week(data.read_db(), day_one)
-    elif load_type=='month':
-        df = data.get_data_by_month(data.read_db(), month, year)
-    elif load_type=='year':
-        df = data.get_data_by_year(data.read_db(), year)
-    elif load_type=='period':
-        df = data.get_date_period(data.read_db(), day_one, day_second)
-    elif load_type=='quarter':
-        df = data.get_date_by_quarter(data.read_db(), quarter)
-
+    if FK_DATA:
+        df = data.read_db_fake() 
+    else:
+        if load_type=='all':
+            df = data.read_db()
+        elif load_type=='prev_day':
+            df = data.get_data_by_prev_day(data.read_db(), prev_day)
+        elif load_type=='week':
+            df = data.get_data_by_week(data.read_db(), day_one)
+        elif load_type=='month':
+            df = data.get_data_by_month(data.read_db(), month, year)
+        elif load_type=='year':
+            df = data.get_data_by_year(data.read_db(), year)
+        elif load_type=='period':
+            df = data.get_date_period(data.read_db(), day_one, day_second)
+        elif load_type=='quarter':
+            df = data.get_date_by_quarter(data.read_db(), quarter)
+    
     # Get quantity of days
     qty_days = len(df['StartTimeStamp'].dt.date.unique())
+
+    # Add time measurement events
+    if NO_TIME_MEASUREMENT:
+        df = aux_analytics.add_time_measurement(df)
 
     return df, qty_days
 DATA, DAYS = load_data('all', (2023,2,12), (2023,2,18), 0, 2, 2024, 1)

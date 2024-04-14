@@ -5,21 +5,30 @@ import pytz
 
 
 ## Read DB
-
-def read_db():
-    '''Get data using the constant for the db path'''
-
-    # Read the data
-    if cts.FK_DATA: 
-        if cts.NEW_FORMAT: df = pd.read_csv(cts.DB_FK_PATH_NEW, sep=',')
-        else: df = pd.read_csv(cts.DB_FK_PATH, sep=',')
-    else: df = pd.read_csv(cts.DB_PATH, sep=',')
+def set_datetime(df):
 
     # Convert the dates and times cols to datetime64
     df['StartTimeStamp'] = pd.to_datetime(df['StartTimeStamp'], format='%Y-%m-%d %H:%M:%S')
     df['EndTimeStamp'] = pd.to_datetime(df['EndTimeStamp'], format='%Y-%m-%d %H:%M:%S')
 
     return df
+
+def read_db():
+    '''Get data using the constant for the db path'''
+
+    # Read the data
+    df = pd.read_csv(cts.DB_PATH, sep=',')
+
+    return set_datetime(df)
+
+def read_db_fake():
+    '''Get data using the constant for the db path'''
+
+    # Read the data
+    if cts.NO_TIME_MEASUREMENT: df = pd.read_csv(cts.DB_FK_PATH_NEW, sep=',')
+    else: df = pd.read_csv(cts.DB_FK_PATH, sep=',')
+
+    return set_datetime(df)
 
 
 ## Special Filter
